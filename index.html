@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Webpage Assignment</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="resources/jquery-3.1.1.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="fonts">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <!-- Material Design Bootstrap -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet"> -->
-    <!-- MDB core JavaScript -->
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script> -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!---Header-->
@@ -40,29 +31,83 @@
         <div class="content">
             <span class="divLeft"><h1>Arctic sea ice extent hits record low for winter maximum.</h1></span>
             <span class="divRight">
-                <i class="fab fa-bookmark bookmark" style="font-size:38px;color:#fff"></i>
+                <i class="fa fa-bookmark-o bookmark"></i>
             </span>
         </div>
     </section> 
     <!--Banner End-->
     <div class="clearfix"></div>   
-    <!--About Section-->    
+    <!-- Section One-->    
     <section id="about" class="wrapper style1 special">
-                <div class="inner">
-                    <div class="row">
-                       <span class="divLeft"><i class="fa fa-clock-o" style="color:#E0E0E0"></i> 1hr ago</span>
-                        <span class="right">
-                            <button class="btn btn-default" id="envi-btn" >ENVIRONMENT</button>
-                        </span> 
-                    </div>
-                    <figure>
-                        <blockquote>
-                            According to the national oceanic and Atmospheric Administration, Ted Scambos, NSIDC lead scientist, puts the potentially record low maximum sea ice extent this year down to low ice extent in the Pacific and the late drop in ice extent in the Barents Sea.
-                        </blockquote>
-                        <hr>
-                    </figure>
+        <div class="inner">
+            <div class="sec-one">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
+                    <span class="icon"><i class="fa fa-angle-double-right" style="color: #E0E0E0;"></i> CNN</span>
+                    <span class="icon"><i class="fa fa-clock-o" style="color: #E0E0E0;"></i> 1hr ago</span>
                 </div>
-            </section> 
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+                    <button class="btn btn-default" id="envi-btn" >ENVIRONMENT</button>
+                </div>
+            </div>
+            <figure>
+                <blockquote id="first-blockquote">
+                    According to the national oceanic and Atmospheric Administration, Ted Scambos, NSIDC lead scientist, puts the potentially record low maximum sea ice extent this year down to low ice extent in the Pacific and the late drop in ice extent in the Barents Sea.
+                </blockquote>
+                <hr>
+            </figure>
+        </div>
+    </section> 
+    <!-- Section One End-->
+    <div class="clearfix"></div>   
+    <!--Section Two --> 
+    <div class="outer">
+        <div class="top"><img src="http://via.placeholder.com/750x450"></div>
+        <div class="middle"><img src="http://via.placeholder.com/750x450"></div>
+        <div class=" block-left">
+            <blockquote id="second-blockquote">
+                "Over the span of the sattelite record, Arctic sea ice has been declining significantly while the sea ice in the Antarctic has increased very slightly."
+            <span> - NOAA</span>
+            </blockquote>
+        </div>
+        <div class="block-right">
+            So what does this new record for the lowest level of winter ice actually mean? 
+        </div>
+    </div>
+    <!-- Section Two End--> 
+    <div class="clearfix"></div>   
+    <!--Section Footer --> 
+    <div class="wrapper">
+        <footer class="container-fluid ">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>SUBSCRIBE </h1>
+                    <p>Get the day's top new stories delivered to your inbox.</p>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Your Email" />
+                            <div class="submit">
+                                <input type="submit" value="subscribe" id="button-sub"/>
+                            </div>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+            <div class="col-md-12 footer-footer">
+                <div class="col-md-6 footer-left">
+                    <span class="add-space"><a href="" class="footer-text">About</a></span>
+                    <span class="add-space"><a href="" class="footer-text">Terms & Conditions</a></span>
+                    <span class="add-space"><a href="" class="footer-text">Privacy Policy</a></span>
+                </div>
+                <div class="col-md-6 footer-right">
+                    <span class="add-space"><i class="fa fa-facebook-official fa-2x" role="button"></i></span>
+                    <span class="add-space"><i class="fa fa-twitter fa-2x" role="button"></i></span>
+                    <span class="add-space"><i class="fa fa-camera-retro fa-2x" role="button"></i></span>
+                    <span class="add-space"><small class="footer-text">&copy; 2015 All rights reserved</small></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Section Footer End-->
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

@@ -65,6 +65,7 @@
 
 #banner h1{
     font-size: 2.5em;
+    font-family: 'Lato', sans-serif;
     color: #fff;
     font-weight: bold;
     line-height: 1em;
@@ -80,17 +81,18 @@
 .divRight {
     width:100px;
     display:block;
-    float: right;
+    float: left;
     
 }
 
-/*.bookmark{
-    font-size: 38px;
+.bookmark{
+    font-size: 1.4em;
     color: #fff;
+    padding: 8px 10px;
     border: 1px solid #FF5722;
     border-radius: 20px;
     background-color: #FF5722;
-}*/
+}
 .content{
     width: 100%;
     height: 100px;
@@ -104,9 +106,6 @@ section.special, article.special {
 
 }
 
-.wrapper {
-    padding: 6em 0 4em 0;
-}
 
 @media screen and (max-width: 1280px)
 .inner {
@@ -122,12 +121,13 @@ section.special, article.special {
      
 }
 
-.inner blockquote {
+#first-blockquote {
     padding: 0px 5px 0px 0px;
     margin: 0px 0 20px;
     font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
     font-weight: bolder;
-     border-left: 0px solid #fff; 
+    border-left: 0px solid #fff; 
 }
 
 
@@ -135,15 +135,223 @@ section.special, article.special {
     width: 15px;
     border: 1px solid #FF5722;
 }
+.sec-one{
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+.left{
+    float: left;
+}
 .right{
-    float: right;
+    text-align: right;
+}
+.icon{
+    color: #000;
+    font-weight: bold;
 }
 #envi-btn{
     
     border-left: #fff;
     border-right: #fff;
     border-top: #fff;
-    border-bottom: 1px solid #eee;
-    margin-top: -80px;
+    box-shadow: none;
+    border-bottom: 2px solid #888;
     font-weight: bold;
 }
+
+.outer {
+  position: relative;
+  margin-top: 10px;
+  width:100%;
+}
+.top {
+  position: absolute;
+  z-index:2;
+}
+.middle {
+  position: absolute;
+  margin-top: 100px;
+  margin-left:500px;
+  z-index:1;
+}
+
+.block-left{
+    float: left;
+    margin-top: 435px;
+    margin-left: 145px;
+    width: 33%;
+    height: auto;
+    z-index: 0;
+}
+#second-blockquote{
+    font-size: 1.6em;
+    font-family: 'Lato', sans-serif;
+    color: #FF5722;
+    padding: 2em 145px 2.2em 35px;
+    border: 3px;
+    border-style: solid;
+    border-color: #FF5722;
+    line-height: 1.2;
+    position: relative;
+  
+}
+#second-blockquote::after{
+    content: '';
+}
+
+#second-blockquote span{
+    display:block;
+    color:#FF5722;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+}
+.block-right{
+    font-weight: 600;
+    font-size: 1.8em;
+    position: absolute;
+    margin-left: 635px;
+    margin-top: 620px;
+    font-family: 'Lato', sans-serif;
+    width: 33%;
+    height: 100px;
+}
+
+.wrapper footer{
+    
+    margin-left: 0px;
+    margin-right: 0px;
+}
+footer{
+  padding-top:50px;
+}
+input:not(.form-control){
+  border-radius:5px;
+  line-height:1.9em;
+  margin:20px 0 20px 0;
+  box-shadow:2px 2px 2px black;
+}
+footer{
+  background-color:#FF5722;
+  color:white;
+  
+}
+.footer-footer{
+  background-color:#eee;
+  margin-top:100px;
+}
+.footer-footer > div{
+  padding-top:2em;
+}
+i{
+ color:#bdbdbd;
+ 
+}
+.footer-right{
+  text-align:right;
+ display:block;
+  float:left;
+}
+.footer-left{
+
+}
+.footer-text{
+  color:#bdbdbd;
+}
+.add-space{
+  margin-right:20px;
+}
+p{
+font-size:1em;
+  color:#FFCCBC;
+}
+button{
+  box-shadow:2px 2px 2px black;
+}
+.feedback-input {
+    opacity:0.9;
+    color:#fff;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight:400;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+  border: 3px solid #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.feedback-input:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #fff;
+    outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+/* Icons ---------------------------------- */
+
+#email{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  box-shadow:none;
+  background-color:#FF7043;
+    background-size: 25px 25px;
+    background-position: 18px 16px;
+    background-repeat: no-repeat;
+  border :1px solid #FF7043;
+  border-radius:30px;
+  width:100%;
+  color:#fff;
+}
+
+#email:focus{
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 25px 25px;
+  background-position: 18px 16px;
+    background-repeat: no-repeat;
+  color:#fff;
+}
+.email{
+  color:#fff;
+}
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-sub{
+    font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+    float:left;
+    border: #fff solid 1px;
+  border-radius:50px;
+  box-shadow:none;
+  width:100%;
+    cursor:pointer;
+    background-color: #fff;
+    color:#FF5722;
+    font-size:1.5em;
+  font-weight:bold;
+    padding-top:13px;
+    padding-bottom:13px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#button-sub:hover{
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+}
+    
+.submit:hover {
+    color: #3498db;
+}
+    
+
