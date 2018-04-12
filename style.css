@@ -77,20 +77,21 @@
     width:700px;
     display:block;
     float: left;
+    margin-top: 100px;
 }
 .divRight {
     width:100px;
     display:block;
     float: left;
+    margin-top: 115px;
     
 }
 
-.bookmark{
-    font-size: 1.4em;
-    color: #fff;
-    padding: 8px 10px;
+.fa-icons{
+    color: #FFCCBC;
+    padding: 15px 8px 5px 8px;
     border: 1px solid #FF5722;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #FF5722;
 }
 .content{
@@ -163,6 +164,7 @@ section.special, article.special {
   position: relative;
   margin-top: 10px;
   width:100%;
+  height: auto;
 }
 .top {
   position: absolute;
@@ -215,6 +217,19 @@ section.special, article.special {
     font-family: 'Lato', sans-serif;
     width: 33%;
     height: 100px;
+}
+.block-right-content{
+    font-size: 1.1em;
+    line-height: 1.8;
+    width: 70%;
+    color: #000px;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#video-sec{
+    height: 550px;
 }
 
 .wrapper footer{
