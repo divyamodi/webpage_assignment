@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Webpage Assignment</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="resources/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="resources/jquery.shiftenter.js"></script>
+    <link href="resources/jquery.shiftenter.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.min.css">
     <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
@@ -29,8 +32,8 @@
     <!--Banner-->
     <section id="banner">
         <div class="content">
-            <div class="col-md-6 col-sm-6 divLeft"><h1>Arctic sea ice extent hits record low for winter maximum.</h1></div>
-            <div class="col-md-6 col-sm-6 divRight">
+            <div class="col-md-6 col-sm-12 divLeft"><h1>Arctic sea ice extent hits record low for winter maximum.</h1></div>
+            <div class="col-md-6 col-sm-12 divRight">
                 <a href="" class="fa-icons"><i class="fa fa-bookmark-o fa-2x"></i></a>
                 <a href="" class="fa-icons"><i class="fa fa-comment-o fa-2x"></i></a>
                 <a href="" class="fa-icons"><i class="fa fa-external-link-square fa-2x"></i></a>
@@ -44,11 +47,11 @@
     <section id="about" class="wrapper style1 special">
         <div class="inner">
             <div class="sec-one">
-                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 left">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 left">
                     <span class="icon"><i class="fa fa-angle-double-right" style="color: #E0E0E0;"></i> CNN</span>
                     <span class="icon"><i class="fa fa-clock-o" style="color: #E0E0E0;"></i> 1hr ago</span>
                 </div>
-                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-12 right">
+                <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 right">
                     <button class="btn btn-default" id="envi-btn" >ENVIRONMENT</button>
                 </div>
             </div>
@@ -67,14 +70,14 @@
         <div class="outer">
         <div class="top"><img src="http://via.placeholder.com/750x450"></div>
         <div class="middle"><img src="http://via.placeholder.com/750x450"></div>
-        <div class=" block-left">
+        <div class="block-left">
             <blockquote id="second-blockquote">
                 "Over the span of the sattelite record, Arctic sea ice has been declining significantly while the sea ice in the Antarctic has increased very slightly."
             <span> - NOAA</span>
             </blockquote>
         </div>
         <div class="block-right">
-            So what does this new record for the lowest level of winter ice actually mean? 
+            <h3>So what does this new record for the lowest level of winter ice actually mean?</h3> 
         </div>
     </div>
     </section>
@@ -83,7 +86,7 @@
     <!-- Section Video-->
     <section >
         <div id="video-sec">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="wrapper demo">
                     <video class="video">
                         <source  />
@@ -93,7 +96,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <aside class="block-right-content">
                     <p class="para">Quo eu ipsum velit, vel et corpora sadipscing, nonumes definitiones vis et. Cu prompta delectus interpretaris nam. Eros temporibus disputationi ex nam. An eam liber ludus zril, alienum placerat at qui. Ut quis tota cum, eos ut mucius bonorum. No mentitum definitionem eos.</p><br>
 
@@ -107,8 +110,93 @@
         <hr class="underline">
     </section>
     
-    <!-- Section Video End-->
-    <div class="clearfix"></div>   
+    <!-- Section Video End--> 
+
+    <div class="clearfix"></div> 
+    <!-- Section  Comment-->
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 page-header">
+                    <div class="col-md-6 text-center">
+                        <h1>23 Comments </h1>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <button type="button" class="comment-btn">Best</button>
+                        <button type="button" class="comment-btn">Newest</button>
+                        <button type="button" class="comment-btn">Oldest</button>
+                    </div>
+                    
+                </div> 
+                <div class="comment-box">
+                  
+                   <div class="comments-list">
+                       <div class="media">
+                           <p class="pull-right"><small>5 days ago</small></p>
+                            <a class="media-left" href="#">
+                              <img class="commentor" src="http://via.placeholder.com/40x40">
+                            </a>
+                            <div class="media-body">
+                                
+                              <h4 class="media-heading user_name">Baltej Singh</h4>
+                              <small>Wow! this is really great.</small> 
+                              
+                              
+                            </div>
+                          </div>
+                       <div class="media">
+                           <p class="pull-right"><small>5 days ago</small></p>
+                            <a class="media-left" href="#">
+                              <img class="commentor" src="http://via.placeholder.com/40x40">
+                            </a>
+                            <div class="media-body">
+                                
+                              <h4 class="media-heading user_name">Baltej Singh</h4>
+                              <small>Wow! this is really great.</small> 
+                              
+                              
+                            </div>
+                          </div>
+                       <div class="media">
+                           <p class="pull-right"><small>5 days ago</small></p>
+                            <a class="media-left" href="#">
+                              <img class="commentor" src="http://via.placeholder.com/40x40">
+                            </a>
+                            <div class="media-body">
+                                
+                              <h4 class="media-heading user_name">Baltej Singh</h4>
+                              <small>Wow! this is really great.</small> 
+                              
+                              
+                            </div>
+                          </div>
+                       <div class="media">
+                           <p class="pull-right"><small>5 days ago</small></p>
+                            <a class="media-left" href="#">
+                              <img class="commentor" src="http://via.placeholder.com/40x40">
+                            </a>
+                            <div class="media-body">
+                                
+                              <h4 class="media-heading user_name">Baltej Singh</h4>
+                              <small>Wow! this is really great.</small> 
+                              
+                              </div>
+                          </div>
+                   </div>
+                </div>
+                <div id="text-area">
+                     <form id="comment-form">
+                        <textarea id="comment-box" rows="3" cols="30" placeholder="Write Something...." class="text-field"></textarea>
+                    </form>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+        
+    
+    <!-- Section  Comment End-->
+    <div class="clearfix"></div>
     <!--Section Footer --> 
     <div class="wrapper">
         <footer class="container-fluid ">

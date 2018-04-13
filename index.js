@@ -4,3 +4,11 @@ $('.video').parent().click(function () {
   $(this).children(".playpause").fadeIn();
     }
 });
+
+$(document).ready(function() {
+	$('textarea').shiftenter();
+	$("#comment-form").on('submit', function(event){
+		event.preventDefault();
+    	alert($("#comment-box").text());
+	});
+});

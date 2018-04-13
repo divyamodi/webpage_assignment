@@ -55,6 +55,7 @@
 }
 
 #banner {
+    width: 100%;
     padding: 20em 0 12em 0;
     background-image: url("http://via.placeholder.com/1920x680");
     background-size: cover;
@@ -110,16 +111,15 @@ section.special, article.special {
 
 @media screen and (max-width: 1280px)
 .inner {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 .inner {
-    margin: 0 auto;
+    margin-left: 190px;
+    width: 100%;
     max-width: 65em;
     text-align: justify;
     text-justify: inter-word;
-    
-     
 }
 
 #first-blockquote {
@@ -146,6 +146,36 @@ section.special, article.special {
 .right{
     text-align: right;
 }
+.page-header{
+    background-color: #FF5722;
+    color: #fff;
+    padding-top: 30px;
+    height: 150px;
+   
+}
+
+.comment-btn {
+    margin-top: 24px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: none;
+    padding: 6px 14px;
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: #FFCCBC;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 1px solid #FFCCBC;
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-default:hover {
+  color: #FF5722;
+  background: #fff;
+  border: 2px solid #ff5722;
+}
 .icon{
     color: #000;
     font-weight: bold;
@@ -161,20 +191,20 @@ section.special, article.special {
 }
 
 .outer {
-  position: relative;
-  margin-top: 10px;
-  width:100%;
-  height: auto;
+    position: relative;
+    margin-top: 10px;
+    width:100%;
+    height: auto;
 }
 .top {
-  position: absolute;
-  z-index:2;
+    position: absolute;
+    z-index:2;
 }
 .middle {
-  position: absolute;
-  margin-top: 100px;
-  margin-left:500px;
-  z-index:1;
+    position: absolute;
+    margin-top: 100px;
+    margin-left:500px;
+    z-index:1;
 }
 
 .block-left{
@@ -256,71 +286,73 @@ section.special, article.special {
 #play-btn{
     color: #FF5722;
 }
+
 #video-sec{
     height: 550px;
 }
 
 .wrapper footer{
-    
     margin-left: 0px;
     margin-right: 0px;
 }
+
 footer{
-  padding-top:50px;
+    padding-top:50px;
 }
+
 input:not(.form-control){
-  border-radius:5px;
-  line-height:1.9em;
-  margin:20px 0 20px 0;
-  box-shadow:2px 2px 2px black;
+    border-radius:5px;
+    line-height:1.9em;
+    margin:20px 0 20px 0;
+    box-shadow:2px 2px 2px black;
 }
 footer{
-  background-color:#FF5722;
-  color:white;
+    background-color:#FF5722;
+    color:white;
   
 }
 .footer-footer{
-  background-color:#eee;
-  margin-top:100px;
+    background-color:#eee;
+    margin-top:100px;
 }
 .footer-footer > div{
-  padding-top:2em;
+    padding-top:2em;
 }
 i{
- color:#bdbdbd;
+    color:#bdbdbd;
  
 }
 .footer-right{
-  text-align:right;
- display:block;
-  float:left;
+    text-align:right;
+    display:block;
+    float:left;
 }
 .footer-left{
 
 }
 .footer-text{
-  color:#bdbdbd;
+    color:#bdbdbd;
 }
 .add-space{
-  margin-right:20px;
+    margin-right:20px;
 }
 p{
-font-size:1em;
-  color:#FFCCBC;
+    font-size:1em;
+    color:#FFCCBC;
 }
 button{
-  box-shadow:2px 2px 2px black;
+    box-shadow:2px 2px 2px black;
 }
 .feedback-input {
     opacity:0.9;
     color:#fff;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight:400;
+    font-weight:400;
     font-size: 18px;
     border-radius: 0;
     line-height: 22px;
     background-color: #fbfbfb;
-  border: 3px solid #fbfbfb;
+    border: 3px solid #fbfbfb;
     padding: 13px 13px 13px 54px;
     margin-bottom: 10px;
     width:100%;
@@ -336,33 +368,33 @@ button{
     border: 3px solid #3498db;
     color: #fff;
     outline: none;
-  padding: 13px 13px 13px 54px;
+    padding: 13px 13px 13px 54px;
 }
 
 /* Icons ---------------------------------- */
 
 #email{
     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  box-shadow:none;
-  background-color:#FF7043;
+    box-shadow:none;
+    background-color:#FF7043;
     background-size: 25px 25px;
     background-position: 18px 16px;
     background-repeat: no-repeat;
-  border :1px solid #FF7043;
-  border-radius:30px;
-  width:100%;
-  color:#fff;
+    border :1px solid #FF7043;
+    border-radius:30px;
+    width:100%;
+    color:#fff;
 }
 
 #email:focus{
     background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
     background-size: 25px 25px;
-  background-position: 18px 16px;
+    background-position: 18px 16px;
     background-repeat: no-repeat;
-  color:#fff;
+    color:#fff;
 }
 .email{
-  color:#fff;
+    color:#fff;
 }
 input:hover, textarea:hover,
 input:focus, textarea:focus {
@@ -373,14 +405,14 @@ input:focus, textarea:focus {
     font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
     float:left;
     border: #fff solid 1px;
-  border-radius:50px;
-  box-shadow:none;
-  width:100%;
+    border-radius:50px;
+    box-shadow:none;
+    width:100%;
     cursor:pointer;
     background-color: #fff;
     color:#FF5722;
     font-size:1.5em;
-  font-weight:bold;
+    font-weight:bold;
     padding-top:13px;
     padding-bottom:13px;
     -webkit-transition: all 0.3s;
@@ -396,5 +428,147 @@ input:focus, textarea:focus {
 .submit:hover {
     color: #3498db;
 }
+
+.user_name{
+    font-size:14px;
+    font-weight: bold;
+}
+.comments-list .media{
+    border-bottom: 1px dotted #ccc;
+}
+
+.comment-box{
+    height: 500px;
+    width: 65%;
+    margin-left: 170px;
+}
+.commentor{
+    border: 1px solid #bdbdbd;
+    border-radius: 25px;
+}
+.pull-right{
+    color: #bdbdbd;
+}
+.media-body{
+    padding-bottom: 20px;
+    padding-left: 24px;
+}  
+
+.text-field{
+    width: 30em; 
+    height: 5em;
+    margin-top: 30px;
+    margin-left: 250px;
+    border: 1px solid #FF5722;
+    border-radius: 35px;
+    padding: 22px;
+    color: #bdbdbd;
+}
+/*-----------------media queries-----------------------------*/
+
+/* For mobile phones: */
+
+@media screen and (max-width: 320px) {
     
+        #banner{
+            width:1278px;
+        }
+
+     
+        .divRight{
+            display: none;
+        }
+
+        .inner{
+            width: 600px;
+            text-align: left;
+            margin-top: 
+            margin-left: 90px;
+            font-size: 1.5em;
+        }
+
+         #first-blockquote{
+            margin-top: 0px;
+            margin-bottom: 565px;
+            margin-left: 0px;
+            width: 1000px;
+            font-size: 2.5em;
+        }
+        .left{
+            font-size: 1.5em;
+        }
+        #envi-btn{
+            font-size: 1.5em;
+        }
+        .right{
+            text-align: right;
+        }
+        .top{
+            margin-top: -380px;
+        }
+        .middle{
+            z-index: 3;
+            margin-bottom: 0px;
+            margin-top: -560px;
+        }
+
+        .block-left{
+            width: 1000px;
+            margin-top: 120px;
+            font-size: 2em;
+        }
+
+        #second-blockquote{
+            border-left: 4px solid #ff5722;
+            border-bottom: 0px;
+            border-right: 0px;
+            border-top: 0px;
+            padding: 38px;
+        }
+     
+        .block-right{
+            width: 1000px;
+            margin-left: 145px;
+        }
+
+        .block-right h3{
+            font-size: 1.8em;
+            font-weight: bolder;
+            color: #000;
+        }
+
+        .block-right-content{
+            width: 1000px;
+            margin-left: 130px;
+            margin-top: 30px;
+        }
+
+        .para{
+            font-size: 2.5em;
+        }
+
+        .underline{
+            display: none;
+        }  
+
+        #video-sec{
+            width: 1560px;
+            margin-top: 358px;
+        }   
+
+        .video{
+            height: 700px;
+        } 
+
+        #play-btn{
+            font-size: 10em;
+        }
+        .wrapper{
+            display: none;
+        } 
+}
+       
+      
+
+        
 
