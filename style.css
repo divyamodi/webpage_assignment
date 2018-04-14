@@ -108,15 +108,10 @@ section.special, article.special {
 
 }
 
-
-@media screen and (max-width: 1280px)
-.inner {
-    max-width: 100%;
-}
-
 .inner {
     margin-left: 190px;
     width: 100%;
+    display: block;
     max-width: 65em;
     text-align: justify;
     text-justify: inter-word;
@@ -470,17 +465,26 @@ input:focus, textarea:focus {
 
 @media screen and (max-width: 320px) {
     
+
         #banner{
-            width:1278px;
+            width: 1245px;
+            height: 500px;
+            margin-bottom: 610px;
         }
 
-     
+        .divLeft{
+            font-size: 1.8em;
+        }
+
         .divRight{
             display: none;
         }
+         #about{
+            margin-top: -555px;
+         }
 
         .inner{
-            width: 600px;
+            width: 1000px;
             text-align: left;
             margin-top: 
             margin-left: 90px;
@@ -563,9 +567,7 @@ input:focus, textarea:focus {
         #play-btn{
             font-size: 10em;
         }
-        .wrapper{
-            display: none;
-        } 
+        
 }
        
       
