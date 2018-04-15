@@ -108,15 +108,10 @@ section.special, article.special {
 
 }
 
-
-@media screen and (max-width: 1280px)
-.inner {
-    max-width: 100%;
-}
-
 .inner {
     margin-left: 190px;
     width: 100%;
+    display: block;
     max-width: 65em;
     text-align: justify;
     text-justify: inter-word;
@@ -133,7 +128,7 @@ section.special, article.special {
 
 
 .underline{
-    width: 15px;
+    width: 2%;
     border: 1px solid #FF5722;
 }
 .sec-one{
@@ -245,9 +240,14 @@ section.special, article.special {
     margin-left: 635px;
     margin-top: 620px;
     font-family: 'Lato', sans-serif;
-    width: 33%;
+    width: 40%;
     height: 100px;
 }
+
+.block-right h3{
+    font-size: 0.9em;
+}
+
 .block-right-content{
     font-size: 1.1em;
     line-height: 1.8;
@@ -306,18 +306,12 @@ input:not(.form-control){
     margin:20px 0 20px 0;
     box-shadow:2px 2px 2px black;
 }
-footer{
-    background-color:#FF5722;
-    color:white;
-  
-}
+
 .footer-footer{
     background-color:#eee;
-    margin-top:100px;
+    margin-top: -20px;
 }
-.footer-footer > div{
-    padding-top:2em;
-}
+
 i{
     color:#bdbdbd;
  
@@ -401,6 +395,14 @@ input:focus, textarea:focus {
     background-color:white;
 }
 
+.footer-section{
+    background-color: #ff5722;
+    color: #fff;
+}
+.footer-section div{
+    margin-top: 30px;
+}
+
 #button-sub{
     font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
     float:left;
@@ -413,6 +415,7 @@ input:focus, textarea:focus {
     color:#FF5722;
     font-size:1.5em;
     font-weight:bold;
+    margin-top: -35px;
     padding-top:13px;
     padding-bottom:13px;
     -webkit-transition: all 0.3s;
@@ -437,8 +440,10 @@ input:focus, textarea:focus {
     border-bottom: 1px dotted #ccc;
 }
 
+
 .comment-box{
-    height: 500px;
+    /*height: 500px;*/
+    margin-top: 212px;
     width: 65%;
     margin-left: 170px;
 }
@@ -454,6 +459,10 @@ input:focus, textarea:focus {
     padding-left: 24px;
 }  
 
+.media, .media-body
+{
+    overflow: visible;
+}
 .text-field{
     width: 30em; 
     height: 5em;
@@ -464,23 +473,56 @@ input:focus, textarea:focus {
     padding: 22px;
     color: #bdbdbd;
 }
+
+.display{
+    background-color: #FF5722;
+    width: 100%;
+    color: #fff;
+    margin-left: 170px;
+}
+
+#cloud{
+    font-size: 7.3em;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: #fff;
+}
+
+.day{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.temp{
+    font-size: 9em;
+}
+
+
 /*-----------------media queries-----------------------------*/
 
 /* For mobile phones: */
 
 @media screen and (max-width: 320px) {
     
+
         #banner{
-            width:1278px;
+            width: 1245px;
+            height: 500px;
+            margin-bottom: 610px;
         }
 
-     
+        .divLeft{
+            font-size: 1.8em;
+        }
+
         .divRight{
             display: none;
         }
+         #about{
+            margin-top: -555px;
+         }
 
         .inner{
-            width: 600px;
+            width: 1000px;
             text-align: left;
             margin-top: 
             margin-left: 90px;
@@ -563,12 +605,103 @@ input:focus, textarea:focus {
         #play-btn{
             font-size: 10em;
         }
-        .wrapper{
+        .wrapper footer{
             display: none;
-        } 
+        }
+
+        .comment-section{
+            display: none;
+        }
+        
 }
        
       
+/* For iPads (landscape) */
 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    #banner{
+        width: 1250px;
+    }
+    #about{
+        width: 1250px;
+    }
+
+    .inner{
+        justify-content: left;
+        text-align: left;
+    }
+
+    .sec-one{
+        font-size: 1.5em;
+    }
+
+    #envi-btn{
+        font-size: 0.9em;
+    }
+
+    #first-blockquote{
+        width: 1000px;
+        font-size: 2em;
+        margin-left: -75px;
+    }
+
+    .block-left{
+        width: 1000px;
+        margin-left: 120px;
+        font-size: 1.2em;
+        margin-top: 580px;
+    }
+    #second-blockquote{
+        border-bottom: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        width: 1055px;
+    }
+    .block-right {
+        width: 945px;
+        font-size: 2em;
+        margin-top: 840px;
+        margin-left: 130px;
+    }
+    .block-right h3{
+        font-size: 1.1em;
+    }
+
+    #video-sec{
+        width: 1250px;
+        height: 1065px;
+        margin-top: 85px;
+        margin-left: -15px;
+    }
+    .demo{
+        width: 80%;
+        margin-left: 130px;
+    }
+
+    .block-right-content{
+        font-size: 1.8em;
+        margin-left: 130px;
+        width: 945px;
+        margin-top: 25px;
+    }
+
+    .sec-one .underline{
+        margin-left: 425px;
+    }
+    .comment-section{
+        width: 1250px;
+    }
+
+    .comment-btn{
+        font-size: 1.2em;
+    }
+    .footer-section{
+        width: 1250px;
+    }
+    .video-sec .underline{
+        margin-left: 610px;
+    }
+}
         
 
