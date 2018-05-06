@@ -612,6 +612,9 @@ input:focus, textarea:focus {
         .comment-section{
             display: none;
         }
+        .footer-section{
+            display: none;
+        }
         
 }
        
