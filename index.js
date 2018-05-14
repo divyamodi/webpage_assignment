@@ -55,7 +55,7 @@ function updateLocalStorage(key, obj){
 
 function getWeather(key, name, dateTime){
 	$.ajax({
-		url: "http://api.openweathermap.org/data/2.5/weather?q=Delhi&APPID=36d135eff2e4955bd0bdf0b39033cd72&units=metric",
+		url: "https://api.openweathermap.org/data/2.5/weather?q=Delhi&APPID=36d135eff2e4955bd0bdf0b39033cd72&units=metric",
 		success: function(response){
 			message = null;
  			paintWeather(name, dateTime, response.main.temp, response.weather[0].main);
